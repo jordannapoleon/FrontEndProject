@@ -1,0 +1,336 @@
+/* || Home Page || */
+body {
+    background-image: url(./Assets/DLBG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+.header{
+  background-color: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+  .header > button{
+    background-color: rgba(176,178,178, 0.8);
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    flex: auto;
+    font-size: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+  }
+  .header > button:hover{
+    background-color: rgb(222,190,255);
+    color: rgb(143,225,231);
+
+  }
+#main {
+  width: 800px;
+  height: 1000px;
+  background-color: rgba(176,178,178, 0.8);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  place-items: center;
+}
+
+/* || Lets Play || */
+  #picture {
+    width: 300px;
+    background-color: rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  #guesses {
+    width: 600px;
+    background-color: rgb(176,178,178, 0.6);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    opacity: .8;
+    display: inline-grid;
+    grid-template-areas: 
+            "A B"
+            "C D";
+  }
+  #g1 {
+    grid: "A";
+    margin: 5px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    color: black;
+  }
+  #g2 {
+    grid: "B";
+    margin: 5px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    color: black;
+  }
+  #g3 {
+    grid: "C";
+    margin: 5px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    color: black;
+  }
+  #g4 {
+    grid: "D";
+    margin: 5px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    color: black;
+  }
+
+/* || Home Page || */
+.info{
+  width: 750px;
+  height: 950px;
+  background-color: rgba(222,190,255, 0.6);
+  border: 2px solid rgba(222,190,255, 0.8);
+  border-radius: 50px;
+}
+#heading1{
+  color: rgb(143,225,231);
+  font-size: 50px;
+}
+.title{
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 125px;
+  color: rgb(143,225,231)
+}
+.inText {
+text-align: left;
+margin-left: 40px;
+margin-right: 40px;
+color: black;
+font-size: 19px;
+}
+
+/* || Start Screen || */
+.startMenuContainer{
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: rgba(222,190,255, 0.6);
+  border: 3px solid rgba(253,176,222, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .startMenuContainer > h1 {
+    margin: auto;
+    color: rgb(238,232,210);
+  }
+  .startMenuContainer > button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(143,225,231, 0.8);
+    font-size: 17px;
+  }
+  .startMenuContainer > button:hover{
+    background-color: rgb(212, 212, 211);
+    color: rgb(143, 5, 189);
+  }
+  .startMenuContainer > #startPlaying{
+    margin: auto;
+  }
+  .startMenuContainer > #startHome{
+    margin: 5px;
+  }
+  .startMenuContainer > #startShop{
+    margin: auto;
+  }
+
+
+/* || End Screen || */
+.endMenuContainer{
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: rgba(222,190,255, 0.6);
+  border: 2px solid rgba(222,190,255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .endMenuContainer > h1{
+    margin: auto;
+  }
+  .endMenuContainer > p{
+    margin: auto;
+    font-size: 25px;
+  }
+  .endMenuContainer > #play {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(34, 201, 243, 0.8);
+    font-size: 17px;
+    margin: auto;
+  }
+  .endMenuContainer > #play:hover{
+    background-color: rgb(212, 212, 211);
+    color: rgb(143, 5, 189);
+  }
+  .endMenuContainer > #home {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(34, 201, 243, 0.8);
+    margin-bottom: 100px;
+    font-size: 17px;
+  }
+  .endMenuContainer > #home:hover{
+  background-color: rgb(212, 212, 211);
+  color: rgb(143, 5, 189);
+}
+
+/* || Player Panel || */
+#bottomUi{
+  width: 600px;
+  height: 75px;
+  background-color: rgba(222,190,255, .6);
+  border: 5px solid rgb(0,0,0);
+  display: grid;
+  grid-template-areas: "P S L";
+  grid-template-columns: 2fr 1fr 2fr;
+}
+  #power_up {
+    grid: 'P';
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+    #power_up > #time {
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      border: 5px solid rgb(0, 0, 0);
+      background-color: rgb(143,225,231);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #time > img {
+      width:80%;
+      opacity: 0.3;
+      margin: auto;
+    }
+    #power_up > #points{
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      border: 5px solid rgb(0, 0, 0);
+      background-color: rgb(143,225,231);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #points > img {
+      width:70%;
+      opacity: 0.3;
+      margin: auto;
+    }
+    
+  #life_line {
+    grid: 'L';
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+    #life_line > #fif {
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      border: 5px solid rgb(0, 0, 0);
+      background-color: rgb(143,225,231);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #fif > img {
+      width:60%;
+      opacity: 0.3;
+      margin: auto;
+    }
+    #life_line > #freebie {
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      border: 5px solid rgb(0, 0, 0);
+      background-color: rgb(143,225,231);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    #freebie > img {
+      width:80%;
+      opacity: 0.3;
+      margin-top: 8px;
+    }
+
+  #score_card {
+    grid: 'S';
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    #score_card > #counter {
+      width: 100px;
+      height: 100px;
+      border-radius: 80px;
+      border: 5px solid rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #counter > #count {
+      font-size: 50px;
+      color: black;
+    }
