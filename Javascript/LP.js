@@ -136,7 +136,7 @@ function gameEnd(){
         let eMStats = $(`<p>You got ${currentScore} answers correct <br>
                             You lost on question ${currentRound} </p>`)
         let eMPlay = $(`<button type=button id='play' onclick="randomNumber()">Play Again</button>`)
-        let eMHome = $(`<button type=button id='home' onclick="location.href='./index.html'">Home Screen</button>`)      
+        let eMHome = $(`<button type=button id='home' onclick="location.href='../index.html'">Home Screen</button>`)      
     $('#main').append(eMBc);
     $('.endMenuContainer').append(eMHead, eMStats, eMPlay, eMHome);
     currentRound = 0;
@@ -147,7 +147,7 @@ function gameStart(){
     let sMBc = $(`<div class="startMenuContainer"></div>`)
         let sMHead = $(`<h1>Let's Begin!</h1>`)
         let sMPlay = $(`<button type=button id='startPlaying' onclick='randomNumber()'>Start</button>`)
-        let sMHome = $(`<button type=button id='startHome' onclick="location.href='./index.html'">Home Screen</button>`)
+        let sMHome = $(`<button type=button id='startHome' onclick="location.href='../index.html'">Home Screen</button>`)
         let sMShop = $(`<button type=button id='startShop' onclick="location.href='./shop.html'">Visit Shop</button>`)  
         $('#main').append(sMBc);
         $('.startMenuContainer').append(sMHead, sMPlay, sMHome, sMShop);
